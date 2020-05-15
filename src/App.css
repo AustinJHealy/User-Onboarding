@@ -1,8 +1,17 @@
 .App {
   text-align: center;
   background-color: lightblue;
+  color: darkblue;
+  padding: 3%;
+  margin: 5%;
+  border: 5px dotted gray;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
 }
-
+.submit {
+  color:darkblue;
+  border: 1px dashed gray;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -16,7 +16,9 @@ const formSchema = yup.object().shape({
     .string()
     .min(8, "Passwords must be at least 8 characters long")
     .required("Password is required"),
-  tos: yup.boolean().oneOf([true], "You must accept the Terms and Conditions"),
+  tos: yup
+    .boolean()
+    .oneOf([true], "You must accept the Terms and Conditions"),
 });
 
 const NewUserForm = () => {
@@ -135,7 +137,7 @@ const NewUserForm = () => {
           />
         </label>
         <br></br>
-        <input type="submit" />
+        <input className="submit" type="submit" />
       </form>
 
       <UserData user={users} />
